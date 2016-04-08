@@ -1,0 +1,824 @@
+/* line 2, C:/Users/Natalia/Documents/AXIT/sass/partials/_reset.scss */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3, stdin */
+body {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 8, stdin */
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 15, stdin */
+.logo_small {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+/* line 20, stdin */
+nav {
+  background-color: #000000;
+}
+
+/* line 25, stdin */
+.menu {
+  display: inline-block;
+  color: #cdcbce;
+  list-style-type: none;
+  float: right;
+  width: 43%;
+  padding: 2% 0;
+}
+
+/* line 34, stdin */
+.menu li {
+  display: inline-block;
+  margin-left: 8%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* line 42, stdin */
+.headerImg {
+  background-image: url("../images/header_img.jpg");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 53.42577%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 48, stdin */
+.headerBox {
+  display: flex;
+  padding-top: 20%;
+  width: 100%;
+}
+
+/* line 54, stdin */
+h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  width: 80%;
+}
+
+/* line 61, stdin */
+.border {
+  width: 70px;
+  height: 2px;
+  background-color: #f5f5f5;
+  margin: 5% 0;
+}
+
+/* line 68, stdin */
+.subText {
+  font-weight: 300;
+  color: #cdcbce;
+  font-size: 0.9rem;
+  width: 60%;
+  line-height: 1.5rem;
+  margin-top: 2%;
+}
+
+/* line 77, stdin */
+.button {
+  padding: 1.5% 4.5%;
+  margin-top: 7%;
+  width: 10%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* line 86, stdin */
+.transparent {
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+}
+
+/* line 91, stdin */
+.login {
+  width: 80%;
+  margin-left: 20%;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* line 96, stdin */
+.login .loginHead {
+  background-color: #f5f5f5;
+  padding: 5% 15%;
+  font-weight: 800;
+  color: #8f9092;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 103, stdin */
+.login .loginHead span {
+  color: #ff9c51;
+  text-transform: uppercase;
+}
+
+/* line 108, stdin */
+.login input {
+  width: 75%;
+  border: none;
+  border-bottom: 2px solid #f5f5f5;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 119, stdin */
+.login button {
+  margin-top: 13%;
+  background-color: #ff9c51;
+  border: none;
+  width: 100%;
+  padding: 5% 20%;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+/* line 131, stdin */
+::-webkit-input-placeholder {
+  color: #cdcbce;
+}
+
+/* line 135, stdin */
+::-moz-placeholder {
+  color: #cdcbce;
+}
+
+/* line 139, stdin */
+::-ms-input-placeholder {
+  color: #cdcbce;
+}
+
+/* line 143, stdin */
+:-moz-placeholder {
+  color: #cdcbce;
+}
+
+/* line 147, stdin */
+.socialMedia {
+  border-bottom: 3px solid #cdcbce;
+}
+
+/* line 151, stdin */
+.media {
+  display: flex;
+}
+
+/* line 156, stdin */
+.textMedia {
+  width: 30%;
+  font-size: 0.9rem;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  flex-grow: 1;
+  color: #8f9092;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 164, stdin */
+.textMedia span {
+  margin-bottom: 1%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* line 170, stdin */
+.textMedia p {
+  margin-top: 1.5%;
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* line 177, stdin */
+.logos {
+  list-style-type: none;
+  flex-grow: 5;
+  margin-top: 2.5%;
+  margin-left: 1%;
+}
+
+/* line 182, stdin */
+.logos li {
+  display: inline-block;
+  font-size: 3rem;
+  margin-left: 4%;
+  color: #cdcbce;
+}
+
+/* line 190, stdin */
+.tabs {
+  background-color: #f5f5f5;
+}
+
+/* line 194, stdin */
+.tabsBox {
+  display: flex;
+  padding: 10% 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 198, stdin */
+.tabsBox .clicableBox {
+  width: 20%;
+}
+
+/* line 200, stdin */
+.tabsBox .clicableBox li {
+  list-style-type: none;
+  padding: 20% 5%;
+  background-color: #333333;
+  width: 40%;
+  border-top: 1px solid #f5f5f5;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* line 212, stdin */
+.tabsBox .tabsText {
+  width: 45%;
+}
+
+/* line 214, stdin */
+.tabsBox .tabsText h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* line 219, stdin */
+.tabsBox .tabsText .tabsSmallText1 {
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-top: 8%;
+}
+
+/* line 224, stdin */
+.tabsBox .tabsText .tabsSmallText2 {
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+/* line 230, stdin */
+.tabsBox .tabsText .orange {
+  background-color: #ff8b38;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 2% 8% 2% 4%;
+}
+
+/* line 239, stdin */
+.tabsBox .tabsPicture {
+  width: 25%;
+  background-image: url("../images/buildings.png");
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 79.0625%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 7%;
+  margin-top: 3%;
+  padding-bottom: 20%;
+}
+
+/* line 250, stdin */
+.sub {
+  display: flex;
+  padding-top: 10%;
+  padding-bottm: 10%;
+}
+
+/* line 254, stdin */
+.sub .viewLeft {
+  width: 100%;
+  background-image: url("../images/view_left.png");
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 71.42857%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 40%;
+  margin-top: 3%;
+}
+
+/* line 261, stdin */
+.sub .subList {
+  width: 85%;
+  margin-left: 15%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+}
+
+/* line 267, stdin */
+.sub .subList h3 {
+  color: #222222;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* line 272, stdin */
+.sub .subList .orange2 {
+  background-color: #ff8b38;
+  margin: 3% 0;
+}
+
+/* line 280, stdin */
+.title1 {
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+/* line 283, stdin */
+.title1 img {
+  float: left;
+  margin: 1% 5% 5% 0;
+}
+
+/* line 287, stdin */
+.title1 h4 {
+  margin-bottom: 1%;
+  color: #222222;
+}
+
+/* line 291, stdin */
+.title1 p {
+  margin-top: 1%;
+}
+
+/* line 296, stdin */
+article {
+  background-color: #f5f5f5;
+}
+
+/* line 300, stdin */
+.standard {
+  display: flex;
+  padding: 10% 0;
+}
+
+/* line 303, stdin */
+.standard .standardPicure {
+  width: 55%;
+}
+
+/* line 305, stdin */
+.standard .standardPicure h3 {
+  color: #222222;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* line 310, stdin */
+.standard .standardPicure .orange2 {
+  background-color: #ff8b38;
+  margin: 6% 0 7% 0;
+}
+
+/* line 314, stdin */
+.standard .standardPicure p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-bottom: 5%;
+}
+
+/* line 321, stdin */
+.standard .picture {
+  width: 50%;
+  background-image: url("../images/view_right.png");
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 71.42857%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 30%;
+  margin-left: 10%;
+}
+
+/* line 330, stdin */
+.awe {
+  padding: 5% 0;
+}
+
+/* line 332, stdin */
+.awe h2 {
+  margin-left: 31%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+/* line 338, stdin */
+.awe .orange2 {
+  background-color: #ff8b38;
+  margin: 2% 0 2% 47%;
+}
+
+/* line 342, stdin */
+.awe .subText {
+  margin-left: 34%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-bottom: 7%;
+}
+
+/* line 351, stdin */
+.three {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 354, stdin */
+.three img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 359, stdin */
+.three h3 {
+  text-align: center;
+}
+
+/* line 362, stdin */
+.three p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+}
+
+/* line 370, stdin */
+.pricing {
+  background-color: #f5f5f5;
+}
+
+/* line 374, stdin */
+.price {
+  padding: 5% 0;
+}
+
+/* line 376, stdin */
+.price h2 {
+  margin-left: 31%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+/* line 382, stdin */
+.price .orange2 {
+  background-color: #ff8b38;
+  margin: 2% 0 2% 47%;
+}
+
+/* line 386, stdin */
+.price .subText {
+  margin-left: 34%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-bottom: 7%;
+}
+
+/* line 395, stdin */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 398, stdin */
+.boxes ul {
+  width: 90%;
+}
+
+/* line 400, stdin */
+.boxes ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 3% 5%;
+  width: 80%;
+}
+
+/* line 406, stdin */
+.boxes ul .darkGray {
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 5%;
+}
+
+/* line 413, stdin */
+.boxes ul .darkGrayBig {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 5%;
+}
+
+/* line 419, stdin */
+.boxes ul .darkGrayBig span {
+  font-size: 5.5rem;
+}
+
+/* line 423, stdin */
+.boxes ul .differentGray {
+  background-color: #333333;
+  color: #aeaeae;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 2% 5% 5% 5%;
+}
+
+/* line 431, stdin */
+.boxes ul .orange {
+  padding: 0.7% 5%;
+  background-color: #ff8b38;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* line 440, stdin */
+.boxes ul .orange3 {
+  padding: 3% 5%;
+}
+
+/* line 443, stdin */
+.boxes ul .gray {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  border-bottom: 2px solid #f5f5f5;
+  font-weight: 600;
+}
+
+/* line 455, stdin */
+.boxFirst {
+  margin-left: 3%;
+}
+
+/* line 459, stdin */
+.boxSecond {
+  margin-top: -3.3%;
+}
+
+/* line 463, stdin */
+.what {
+  padding: 5% 0;
+}
+
+/* line 465, stdin */
+.what h2 {
+  margin-left: 20%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+/* line 471, stdin */
+.what .orange2 {
+  background-color: #ff8b38;
+  margin: 2% 0 2% 47%;
+}
+
+/* line 475, stdin */
+.what .subText {
+  margin-left: 34%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-bottom: 3%;
+}
+
+/* line 484, stdin */
+.persons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 487, stdin */
+.persons p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  width: 65%;
+  line-height: 1rem;
+  background-color: #f5f5f5;
+  padding: 6% 2% 8% 3%;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+/* line 498, stdin */
+.persons .arrowdown {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #f5f5f5;
+  margin-left: 7%;
+}
+
+/* line 507, stdin */
+.persons img {
+  float: left;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+/* line 512, stdin */
+.persons h3 {
+  margin-bottom: 1%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 516, stdin */
+.persons .job {
+  font-size: 0.9rem;
+  color: #8f9092;
+}
+
+/* line 522, stdin */
+.horizontal {
+  width: 100%;
+  background-image: url("../images/horizontal_dark.png");
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 23.21429%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 23%;
+}
+
+/* line 528, stdin */
+.horizontal h1 {
+  margin-left: 33%;
+  padding-top: 7%;
+  margin-bottom: 2%;
+}
+
+/* line 533, stdin */
+.horizontal .border {
+  margin-left: 47%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* line 538, stdin */
+.horizontal .subText {
+  margin-left: 20%;
+}
+
+/* line 541, stdin */
+.horizontal .button {
+  margin-left: 43%;
+  margin-top: 3%;
+  padding: 1% 0% 1% 3.5%;
+}
+
+/* line 548, stdin */
+.contact {
+  padding: 5% 0;
+}
+
+/* line 550, stdin */
+.contact h2 {
+  margin-left: 20%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+/* line 556, stdin */
+.contact .orange2 {
+  background-color: #ff8b38;
+  margin: 2% 0 2% 47%;
+}
+
+/* line 560, stdin */
+.contact .subText {
+  margin-left: 34%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-bottom: 3%;
+}
+
+/* line 567, stdin */
+.contact .orange {
+  background-color: #ff8b38;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 1% 1% 1% 2%;
+  margin-left: 43%;
+}
+
+/* line 577, stdin */
+form {
+  display: flex;
+}
+
+/* line 579, stdin */
+form .leftCol {
+  width: 50%;
+}
+
+/* line 581, stdin */
+form .leftCol input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #f5f5f5;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 592, stdin */
+form .rightCol {
+  width: 50%;
+}
+
+/* line 594, stdin */
+form .rightCol textarea {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #f5f5f5;
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  padding-bottom: 22%;
+  padding-left: 3%;
+  font-family: "Open Sans", sans-serif;
+  resize: none;
+}
+
+/* line 609, stdin */
+footer {
+  background-color: #000000;
+}
+
+/* line 611, stdin */
+footer .logos {
+  margin-left: 35%;
+  padding-top: 1%;
+}
+
+/* line 614, stdin */
+footer .logos li {
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+
+/* line 619, stdin */
+footer .foot {
+  margin-left: 45%;
+  padding-bottom: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #8f9092;
+  margin-top: 0.5%;
+}

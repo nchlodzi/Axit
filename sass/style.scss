@@ -1,0 +1,627 @@
+@import "modules/all";
+
+body{
+	font-size: 18px;
+	font-family: $font-main;
+}
+
+.container{
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.logo_small{
+	padding-top:1.5%;
+	padding-bottom: 1.5%;
+}
+
+nav{
+	background-color: $color-black;
+}
+
+
+.menu{
+	display: inline-block;
+	color: $color-gray;
+	list-style-type: none;
+	float: right;
+	width: 43%;
+	padding: 2% 0; 
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 8%;
+	font-family: $font-second;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.headerImg{
+	background-image: url('../images/header_img.jpg');
+	width: 100%;
+	@include rwd_image(1226px, 655px);
+}
+
+.headerBox{
+	display: flex;
+	padding-top: 20%;
+	width: 100%;
+}
+
+h1{
+	text-transform: uppercase;
+	color: $color-white;
+	font-weight: 400;
+	width: 80%;
+}
+
+.border{
+	width: 70px;
+	height: 2px;
+	background-color: $color-lightGray;
+	margin: 5% 0;
+}
+
+.subText{
+	font-weight: 300;
+	color: $color-gray;
+	font-size: 0.9rem;
+	width: 60%;
+	line-height: 1.5rem;
+	margin-top: 2%;
+}
+
+.button{
+	padding: 1.5% 4.5%;
+	margin-top: 7%;
+	width: 10%;
+	font-family: $font-second;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.transparent{
+	border: 2px solid $color-lightGray;
+	color: $color-lightGray;
+}
+
+.login{
+	width: 80%;
+	margin-left: 20%;
+	border-radius: 5px;
+	background-color: $color-white;
+	.loginHead{
+		background-color: $color-lightGray;
+		padding: 5% 15%;
+		font-weight: 800;
+		color: $color-darkGray;
+		font-size: 1.2rem;
+		font-family: $font-second;
+		span{
+			color: $color-orange2;
+			text-transform: uppercase;
+		}
+	}	
+	input{
+		width: 75%;
+		border: none;
+		border-bottom: 2px solid $color-lightGray;
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-bottom: 1%;
+		padding-bottom: 2%;
+		padding-left: 3%;
+		font-family: $font-second;
+	}
+	button{
+		margin-top: 13%;
+		background-color: $color-orange2;
+		border: none;
+		width: 100%;
+		padding: 5% 20%;
+		color: $color-white;
+		font-family: $font-second;
+		font-size: 1rem;
+	}
+}
+
+::-webkit-input-placeholder{
+	color: $color-gray;
+}
+
+::-moz-placeholder{
+	color: $color-gray;
+}
+
+::-ms-input-placeholder{
+	color: $color-gray;
+}
+
+:-moz-placeholder{
+	color: $color-gray;
+}
+
+.socialMedia{
+	border-bottom: 3px solid $color-gray;
+}
+
+.media{
+	display: flex;
+}
+
+
+.textMedia{
+	width: 30%;
+	font-size: 0.9rem;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	flex-grow: 1;
+	color: $color-darkGray;
+	font-family: $font-second;
+	span{
+		margin-bottom: 1%;
+		font-size: 1.3rem;
+		font-weight: bold;
+		color: #333333;
+	}
+	p{
+		margin-top: 1.5%;
+		line-height: 1.2rem;
+		margin-bottom: 0;
+	}
+}
+
+.logos{
+	list-style-type: none;
+	flex-grow: 5;
+	margin-top: 2.5%;
+	margin-left: 1%;
+	li{
+		display: inline-block;
+		font-size: 3rem;
+		margin-left: 4%;
+		color: $color-gray;
+	}
+}
+
+.tabs{
+	background-color: $color-lightGray;
+}
+
+.tabsBox{
+	display: flex;
+	padding: 10% 0;
+	font-family: $font-second;
+	.clicableBox{
+		width: 20%;
+		li{
+			list-style-type: none;
+			padding: 20% 5%;
+			background-color: #333333;
+			width: 40%;
+			border-top: 1px solid $color-lightGray;
+			text-align: center;
+			font-size: 0.95rem;
+			font-weight: 700;
+			color: $color-white;
+		}
+	}
+	.tabsText{
+		width: 45%;
+		h3{
+			margin-top: 0;
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+		.tabsSmallText1{
+			font-size: 0.9rem;
+			color: $color-darkGray;
+			margin-top: 8%;
+		}
+		.tabsSmallText2{
+			font-size: 0.9rem;
+			color: $color-darkGray;
+			margin-top: 2%;
+			margin-bottom: 10%;
+		}
+		.orange{
+			background-color: $color-orange;
+			color: $color-white;
+			border: none;
+			border-radius: 3px;
+			padding: 2% 8% 2% 4%;
+		}
+	}
+
+	.tabsPicture{ 
+		width: 25%;
+		background-image: url('../images/buildings.png');
+		@include rwd_image(320px, 253px);
+		margin-left: 7%;
+		margin-top: 3%;
+		padding-bottom: 20%;
+
+	}
+}
+
+.sub{
+	display: flex;
+	padding-top: 10%;
+	padding-bottm: 10%;
+	.viewLeft{
+		width: 100%;
+		background-image: url('../images/view_left.png');
+		@include rwd_image(525px, 375px);
+		padding-bottom: 40%;
+		margin-top: 3%;
+	}
+	.subList{
+		width: 85%;
+		margin-left: 15%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		h3{
+			color: #222222;
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+		.orange2{
+			background-color: $color-orange;
+			margin: 3% 0;
+		}
+
+	}
+}
+
+.title1{
+	margin-bottom: 1%;
+	margin-top: 10%;
+	img{
+		float: left;
+		margin: 1% 5% 5% 0;
+	}
+	h4{
+		margin-bottom: 1%;
+		color: #222222;
+	}
+	p{
+		margin-top: 1%;
+	}
+}
+
+article{
+	background-color: $color-lightGray;
+}
+
+.standard{
+	display: flex;
+	padding: 10% 0;
+	.standardPicure{
+		width: 55%;
+		h3{
+			color: #222222;
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+		.orange2{
+			background-color: $color-orange;
+			margin: 6% 0 7% 0;
+		}
+		p{
+			font-family: $font-second;
+			font-size: 0.9rem;
+			color: $color-darkGray;
+			margin-bottom: 5%;
+		}
+	}
+	.picture{
+		width: 50%;
+		background-image: url('../images/view_right.png');
+		@include rwd_image(525px, 375px);
+		padding-bottom: 30%;
+		margin-left: 10%;
+	}
+}
+
+.awe{
+	padding: 5% 0;
+	h2{
+		margin-left: 31%;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2.4rem;
+	}
+	.orange2{
+		background-color: $color-orange;
+		margin: 2% 0 2% 47%;
+	} 
+	.subText{
+		margin-left: 34%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		margin-bottom: 7%;
+	}
+}
+
+.three{
+	display: flex;
+	justify-content: space-between;
+	img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+	}
+}
+
+.pricing{
+	background-color: $color-lightGray;
+}
+
+.price{
+	padding: 5% 0;
+	h2{
+		margin-left: 31%;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2.4rem;
+	}
+	.orange2{
+		background-color: $color-orange;
+		margin: 2% 0 2% 47%;
+	} 
+	.subText{
+		margin-left: 34%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		margin-bottom: 7%;
+	}
+}
+
+.boxes{
+	display: flex;
+	justify-content: space-between;
+	ul{
+		width: 90%;
+		li{
+			list-style-type: none;
+			text-align: center;
+			padding: 3% 5%;
+			width: 80%;
+			}
+		.darkGray{
+			background-color: #333333;
+			color: $color-white;
+			font-weight: bold;
+			border-bottom: 1px solid $color-lightGray;
+			padding: 5%;
+		}
+		.darkGrayBig{
+			background-color: #333333;
+			color: $color-white;
+			font-size: 2rem;
+			font-weight: bold;
+			padding: 0 5%;
+			span{
+				font-size: 5.5rem;
+			}
+		}	
+		.differentGray{
+			background-color: #333333;
+			color: #aeaeae;
+			font-family: $font-second;
+			font-weight: 600;
+			font-size: 0.9rem;
+			padding: 2% 5% 5% 5%;
+		}
+		.orange{
+			padding: 0.7% 5%;; 
+			background-color: $color-orange;
+			color: $color-white;
+			font-family: $font-second;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.9rem;
+		}
+		.orange3{
+			padding: 3% 5%;
+		}
+		.gray{
+			background-color: $color-white;
+			text-transform: uppercase;
+			font-family: $font-second;
+			font-size: 0.9rem;
+			color: $color-darkGray;
+			border-bottom: 2px solid $color-lightGray;
+			font-weight: 600;
+		}			
+	}
+}
+
+.boxFirst{
+	margin-left: 3%;
+}
+
+.boxSecond{
+	margin-top: -3.3%;
+}	
+
+.what{
+	padding: 5% 0;
+	h2{
+		margin-left: 20%;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2.4rem;
+	}
+	.orange2{
+		background-color: $color-orange;
+		margin: 2% 0 2% 47%;
+	} 
+	.subText{
+		margin-left: 34%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		margin-bottom: 3%;
+	}
+}
+
+.persons{
+	display: flex;
+	justify-content: space-between;
+	p{
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		width: 65%;
+		line-height: 1rem;
+		background-color: $color-lightGray;
+		padding: 6% 2% 8% 3%;
+		border-radius: 5px;
+		margin-bottom: 0;
+	}
+	.arrowdown{
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 15px solid $color-lightGray;
+		margin-left: 7%;
+	}
+
+	img{
+		float: left;
+		margin-right: 5%;
+		margin-top: 3%;
+	}
+	h3{
+		margin-bottom: 1%;
+		font-family: $font-second;
+	}
+	.job{
+		font-size: 0.9rem;
+		color: $color-darkGray;
+	}
+}
+
+.horizontal{
+	width: 100%;
+	background-image: url('../images/horizontal_dark.png');
+	@include rwd_image(1400px, 325px);
+	padding-bottom: 23%;
+
+	h1{
+		margin-left: 33%;
+		padding-top: 7%;
+		margin-bottom: 2%;
+	}
+	.border{
+		margin-left: 47%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.subText{
+		margin-left: 20%;
+	}
+	.button{
+		margin-left: 43%;
+		margin-top: 3%;
+		padding: 1% 0% 1% 3.5%;
+	}
+}
+
+.contact{
+	padding: 5% 0;
+	h2{
+		margin-left: 20%;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2.4rem;
+	}
+	.orange2{
+		background-color: $color-orange;
+		margin: 2% 0 2% 47%;
+	} 
+	.subText{
+		margin-left: 34%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		margin-bottom: 3%;
+	}
+.orange{
+		background-color: $color-orange;
+		color: $color-white;
+		border: none;
+		border-radius: 3px;
+		padding: 1% 1% 1% 2%;
+		margin-left: 43%;
+		}
+}
+
+form{
+	display: flex;
+	.leftCol{
+		width: 50%;
+		input{
+			width: 90%;
+			border: none;
+			border-bottom: 2px solid $color-lightGray;
+			margin-top: 5%;
+			margin-bottom: 1%;
+			padding-bottom: 2%;
+			padding-left: 3%;
+			font-family: $font-second;
+		}
+	}
+	.rightCol{
+		width: 50%;
+		textarea{
+			width: 90%;
+			border: none;
+			border-bottom: 2px solid $color-lightGray;
+			margin-top: 5%;
+			margin-left: 3%;
+			margin-bottom: 1%;
+			padding-bottom: 22%;
+			padding-left: 3%;
+			font-family: $font-second;
+			resize: none;
+		}	
+	}
+}
+
+footer{
+	background-color: $color-black;
+	.logos{
+		margin-left: 35%;
+		padding-top: 1%;
+		li{
+		font-size: 1.5rem;
+		margin-left: 1%;
+		}
+	}
+	.foot{
+		margin-left: 45%;
+		padding-bottom: 1%;
+		font-family: $font-second;
+		font-size: 0.9rem;
+		color: $color-darkGray;
+		margin-top: 0.5%;
+	}
+}
