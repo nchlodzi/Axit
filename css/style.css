@@ -69,15 +69,29 @@ nav {
   width: 100%;
 }
 
-/* line 54, stdin */
-h1 {
+/* line 52, stdin */
+.headerBox h1 {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 400;
   width: 80%;
 }
 
-/* line 61, stdin */
+@media (max-width: 1500px) {
+  /* line 61, stdin */
+  .headerBox {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 1320px) {
+  /* line 67, stdin */
+  .headerBox {
+    padding-top: 10%;
+  }
+}
+
+/* line 72, stdin */
 .border {
   width: 70px;
   height: 2px;
@@ -85,7 +99,7 @@ h1 {
   margin: 5% 0;
 }
 
-/* line 68, stdin */
+/* line 79, stdin */
 .subText {
   font-weight: 300;
   color: #cdcbce;
@@ -95,7 +109,7 @@ h1 {
   margin-top: 2%;
 }
 
-/* line 77, stdin */
+/* line 88, stdin */
 .button {
   padding: 1.5% 4.5%;
   margin-top: 7%;
@@ -103,15 +117,23 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
-/* line 86, stdin */
+/* line 98, stdin */
 .transparent {
   border: 2px solid #f5f5f5;
   color: #f5f5f5;
+  cursor: pointer;
 }
 
-/* line 91, stdin */
+/* line 102, stdin */
+.transparent:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+/* line 108, stdin */
 .login {
   width: 80%;
   margin-left: 20%;
@@ -119,7 +141,7 @@ h1 {
   background-color: #ffffff;
 }
 
-/* line 96, stdin */
+/* line 113, stdin */
 .login .loginHead {
   background-color: #f5f5f5;
   padding: 5% 15%;
@@ -127,28 +149,30 @@ h1 {
   color: #8f9092;
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
+  border-radius: 5% 5% 0 0;
 }
 
-/* line 103, stdin */
+/* line 121, stdin */
 .login .loginHead span {
   color: #ff9c51;
   text-transform: uppercase;
 }
 
-/* line 108, stdin */
+/* line 126, stdin */
 .login input {
   width: 75%;
   border: none;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 1px solid #d6d6d6;
   margin-top: 10%;
   margin-left: 10%;
   margin-bottom: 1%;
   padding-bottom: 2%;
   padding-left: 3%;
   font-family: "Open Sans", sans-serif;
+  color: #d6d6d6;
 }
 
-/* line 119, stdin */
+/* line 138, stdin */
 .login button {
   margin-top: 13%;
   background-color: #ff9c51;
@@ -158,39 +182,41 @@ h1 {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
 }
 
-/* line 131, stdin */
+/* line 152, stdin */
 ::-webkit-input-placeholder {
-  color: #cdcbce;
+  color: #d6d6d6;
 }
 
-/* line 135, stdin */
+/* line 156, stdin */
 ::-moz-placeholder {
-  color: #cdcbce;
+  color: #d6d6d6;
 }
 
-/* line 139, stdin */
+/* line 160, stdin */
 ::-ms-input-placeholder {
-  color: #cdcbce;
+  color: #d6d6d6;
 }
 
-/* line 143, stdin */
+/* line 164, stdin */
 :-moz-placeholder {
-  color: #cdcbce;
+  color: #d6d6d6;
 }
 
-/* line 147, stdin */
+/* line 168, stdin */
 .socialMedia {
   border-bottom: 3px solid #cdcbce;
 }
 
-/* line 151, stdin */
+/* line 172, stdin */
 .media {
   display: flex;
 }
 
-/* line 156, stdin */
+/* line 177, stdin */
 .textMedia {
   width: 30%;
   font-size: 0.9rem;
@@ -201,7 +227,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 164, stdin */
+/* line 185, stdin */
 .textMedia span {
   margin-bottom: 1%;
   font-size: 1.3rem;
@@ -209,14 +235,14 @@ h1 {
   color: #333333;
 }
 
-/* line 170, stdin */
+/* line 191, stdin */
 .textMedia p {
   margin-top: 1.5%;
   line-height: 1.2rem;
   margin-bottom: 0;
 }
 
-/* line 177, stdin */
+/* line 198, stdin */
 .logos {
   list-style-type: none;
   flex-grow: 5;
@@ -224,32 +250,41 @@ h1 {
   margin-left: 1%;
 }
 
-/* line 182, stdin */
+/* line 203, stdin */
 .logos li {
   display: inline-block;
   font-size: 3rem;
   margin-left: 4%;
+}
+
+/* line 207, stdin */
+.logos li a {
   color: #cdcbce;
 }
 
-/* line 190, stdin */
+/* line 209, stdin */
+.logos li a:hover {
+  color: #000000;
+}
+
+/* line 216, stdin */
 .tabs {
   background-color: #f5f5f5;
 }
 
-/* line 194, stdin */
+/* line 220, stdin */
 .tabsBox {
   display: flex;
   padding: 10% 0;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 198, stdin */
+/* line 224, stdin */
 .tabsBox .clicableBox {
   width: 20%;
 }
 
-/* line 200, stdin */
+/* line 226, stdin */
 .tabsBox .clicableBox li {
   list-style-type: none;
   padding: 20% 5%;
@@ -262,26 +297,26 @@ h1 {
   color: #ffffff;
 }
 
-/* line 212, stdin */
+/* line 238, stdin */
 .tabsBox .tabsText {
   width: 45%;
 }
 
-/* line 214, stdin */
+/* line 240, stdin */
 .tabsBox .tabsText h3 {
   margin-top: 0;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-/* line 219, stdin */
+/* line 245, stdin */
 .tabsBox .tabsText .tabsSmallText1 {
   font-size: 0.9rem;
   color: #8f9092;
   margin-top: 8%;
 }
 
-/* line 224, stdin */
+/* line 250, stdin */
 .tabsBox .tabsText .tabsSmallText2 {
   font-size: 0.9rem;
   color: #8f9092;
@@ -289,16 +324,17 @@ h1 {
   margin-bottom: 10%;
 }
 
-/* line 230, stdin */
+/* line 256, stdin */
 .tabsBox .tabsText .orange {
   background-color: #ff8b38;
   color: #ffffff;
   border: none;
   border-radius: 3px;
   padding: 2% 8% 2% 4%;
+  cursor: pointer;
 }
 
-/* line 239, stdin */
+/* line 266, stdin */
 .tabsBox .tabsPicture {
   width: 25%;
   background-image: url("../images/buildings.png");
@@ -312,16 +348,16 @@ h1 {
   padding-bottom: 20%;
 }
 
-/* line 250, stdin */
+/* line 277, stdin */
 .sub {
   display: flex;
   padding-top: 10%;
   padding-bottm: 10%;
 }
 
-/* line 254, stdin */
+/* line 281, stdin */
 .sub .viewLeft {
-  width: 100%;
+  width: 110%;
   background-image: url("../images/view_left.png");
   background-size: 100% auto;
   height: 0;
@@ -332,81 +368,98 @@ h1 {
   margin-top: 3%;
 }
 
-/* line 261, stdin */
+/* line 288, stdin */
 .sub .subList {
-  width: 85%;
+  width: 90%;
   margin-left: 15%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
 }
 
-/* line 267, stdin */
+/* line 294, stdin */
 .sub .subList h3 {
   color: #222222;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-/* line 272, stdin */
+/* line 299, stdin */
 .sub .subList .orange2 {
   background-color: #ff8b38;
   margin: 3% 0;
 }
 
-/* line 280, stdin */
+@media (max-width: 1100px) {
+  /* line 308, stdin */
+  .sub {
+    flex-direction: column;
+  }
+  /* line 310, stdin */
+  .sub .viewLeft {
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 50%;
+  }
+  /* line 315, stdin */
+  .sub .subList {
+    width: 70%;
+  }
+}
+
+/* line 321, stdin */
 .title1 {
   margin-bottom: 1%;
   margin-top: 10%;
 }
 
-/* line 283, stdin */
+/* line 324, stdin */
 .title1 img {
   float: left;
   margin: 1% 5% 5% 0;
 }
 
-/* line 287, stdin */
+/* line 328, stdin */
 .title1 h4 {
   margin-bottom: 1%;
   color: #222222;
 }
 
-/* line 291, stdin */
+/* line 332, stdin */
 .title1 p {
   margin-top: 1%;
 }
 
-/* line 296, stdin */
+/* line 337, stdin */
 article {
   background-color: #f5f5f5;
 }
 
-/* line 300, stdin */
+/* line 341, stdin */
 .standard {
   display: flex;
-  padding: 10% 0;
+  padding: 10% 0 2% 0;
 }
 
-/* line 303, stdin */
+/* line 344, stdin */
 .standard .standardPicure {
-  width: 55%;
+  width: 65%;
 }
 
-/* line 305, stdin */
+/* line 346, stdin */
 .standard .standardPicure h3 {
   color: #222222;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-/* line 310, stdin */
+/* line 351, stdin */
 .standard .standardPicure .orange2 {
   background-color: #ff8b38;
   margin: 6% 0 7% 0;
 }
 
-/* line 314, stdin */
+/* line 355, stdin */
 .standard .standardPicure p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
@@ -414,118 +467,155 @@ article {
   margin-bottom: 5%;
 }
 
-/* line 321, stdin */
+/* line 362, stdin */
 .standard .picture {
-  width: 50%;
+  width: 60%;
   background-image: url("../images/view_right.png");
   background-size: 100% auto;
   height: 0;
   padding-bottom: 71.42857%;
   display: block;
   background-repeat: no-repeat;
-  padding-bottom: 30%;
-  margin-left: 10%;
+  padding-bottom: 40%;
+  margin-left: 5%;
 }
 
-/* line 330, stdin */
+@media (max-width: 1100px) {
+  /* line 372, stdin */
+  .standard {
+    flex-direction: column;
+    padding: 5% 0 2% 0;
+  }
+  /* line 375, stdin */
+  .standard .standardPicure {
+    margin-left: 15%;
+  }
+  /* line 378, stdin */
+  .standard .picture {
+    width: 70%;
+    padding-bottom: 50%;
+    margin-left: 15%;
+  }
+}
+
+/* line 386, stdin */
 .awe {
   padding: 5% 0;
 }
 
-/* line 332, stdin */
+/* line 388, stdin */
 .awe h2 {
-  margin-left: 31%;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.4rem;
+  text-align: center;
 }
 
-/* line 338, stdin */
+/* line 394, stdin */
 .awe .orange2 {
   background-color: #ff8b38;
-  margin: 2% 0 2% 47%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 342, stdin */
+/* line 401, stdin */
 .awe .subText {
-  margin-left: 34%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
   margin-bottom: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-/* line 351, stdin */
+/* line 412, stdin */
 .three {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 354, stdin */
+/* line 415, stdin */
 .three img {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-/* line 359, stdin */
+/* line 420, stdin */
 .three h3 {
   text-align: center;
 }
 
-/* line 362, stdin */
+/* line 423, stdin */
 .three p {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-/* line 370, stdin */
+@media (max-width: 567px) {
+  /* line 434, stdin */
+  .three {
+    flex-direction: column;
+  }
+}
+
+/* line 439, stdin */
 .pricing {
   background-color: #f5f5f5;
 }
 
-/* line 374, stdin */
+/* line 443, stdin */
 .price {
   padding: 5% 0;
 }
 
-/* line 376, stdin */
+/* line 445, stdin */
 .price h2 {
-  margin-left: 31%;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.4rem;
+  text-align: center;
 }
 
-/* line 382, stdin */
+/* line 451, stdin */
 .price .orange2 {
   background-color: #ff8b38;
-  margin: 2% 0 2% 47%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 386, stdin */
+/* line 458, stdin */
 .price .subText {
-  margin-left: 34%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
   margin-bottom: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-/* line 395, stdin */
+/* line 469, stdin */
 .boxes {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 398, stdin */
+/* line 472, stdin */
 .boxes ul {
   width: 90%;
 }
 
-/* line 400, stdin */
+/* line 474, stdin */
 .boxes ul li {
   list-style-type: none;
   text-align: center;
@@ -533,7 +623,7 @@ article {
   width: 80%;
 }
 
-/* line 406, stdin */
+/* line 480, stdin */
 .boxes ul .darkGray {
   background-color: #333333;
   color: #ffffff;
@@ -542,7 +632,7 @@ article {
   padding: 5%;
 }
 
-/* line 413, stdin */
+/* line 487, stdin */
 .boxes ul .darkGrayBig {
   background-color: #333333;
   color: #ffffff;
@@ -551,12 +641,12 @@ article {
   padding: 0 5%;
 }
 
-/* line 419, stdin */
+/* line 493, stdin */
 .boxes ul .darkGrayBig span {
   font-size: 5.5rem;
 }
 
-/* line 423, stdin */
+/* line 497, stdin */
 .boxes ul .differentGray {
   background-color: #333333;
   color: #aeaeae;
@@ -566,7 +656,7 @@ article {
   padding: 2% 5% 5% 5%;
 }
 
-/* line 431, stdin */
+/* line 505, stdin */
 .boxes ul .orange {
   padding: 0.7% 5%;
   background-color: #ff8b38;
@@ -577,12 +667,12 @@ article {
   font-size: 0.9rem;
 }
 
-/* line 440, stdin */
+/* line 514, stdin */
 .boxes ul .orange3 {
   padding: 3% 5%;
 }
 
-/* line 443, stdin */
+/* line 517, stdin */
 .boxes ul .gray {
   background-color: #ffffff;
   text-transform: uppercase;
@@ -593,56 +683,85 @@ article {
   font-weight: 600;
 }
 
-/* line 455, stdin */
+@media (max-width: 600px) {
+  /* line 530, stdin */
+  .boxes {
+    flex-direction: column;
+  }
+  /* line 532, stdin */
+  .boxes ul {
+    margin-left: 10%;
+    margin-bottom: 3%;
+  }
+}
+
+/* line 539, stdin */
 .boxFirst {
   margin-left: 3%;
 }
 
-/* line 459, stdin */
+/* line 543, stdin */
 .boxSecond {
   margin-top: -3.3%;
 }
 
-/* line 463, stdin */
+@media (max-width: 600px) {
+  /* line 548, stdin */
+  .boxSecond {
+    margin-top: 0%;
+  }
+}
+
+/* line 555, stdin */
 .what {
   padding: 5% 0;
 }
 
-/* line 465, stdin */
+/* line 557, stdin */
 .what h2 {
-  margin-left: 20%;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.4rem;
+  text-align: center;
 }
 
-/* line 471, stdin */
+/* line 563, stdin */
 .what .orange2 {
   background-color: #ff8b38;
-  margin: 2% 0 2% 47%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 475, stdin */
+/* line 570, stdin */
 .what .subText {
-  margin-left: 34%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
   margin-bottom: 3%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-/* line 484, stdin */
+/* line 581, stdin */
 .persons {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 487, stdin */
-.persons p {
+/* line 584, stdin */
+.persons .person {
+  margin-left: 5%;
+}
+
+/* line 586, stdin */
+.persons .person p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
-  width: 65%;
+  width: 80%;
   line-height: 1rem;
   background-color: #f5f5f5;
   padding: 6% 2% 8% 3%;
@@ -650,8 +769,8 @@ article {
   margin-bottom: 0;
 }
 
-/* line 498, stdin */
-.persons .arrowdown {
+/* line 597, stdin */
+.persons .person .arrowdown {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -660,26 +779,45 @@ article {
   margin-left: 7%;
 }
 
-/* line 507, stdin */
-.persons img {
+/* line 605, stdin */
+.persons .person img {
   float: left;
   margin-right: 5%;
   margin-top: 3%;
 }
 
-/* line 512, stdin */
-.persons h3 {
+/* line 610, stdin */
+.persons .person h3 {
   margin-bottom: 1%;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 516, stdin */
-.persons .job {
+/* line 614, stdin */
+.persons .person .job {
   font-size: 0.9rem;
   color: #8f9092;
 }
 
-/* line 522, stdin */
+@media (max-width: 650px) {
+  /* line 622, stdin */
+  .persons {
+    flex-direction: column;
+  }
+  /* line 624, stdin */
+  .persons .person {
+    margin-left: 10%;
+  }
+  /* line 626, stdin */
+  .persons .person p {
+    width: 80%;
+  }
+  /* line 629, stdin */
+  .persons .person img {
+    margin-left: 2%;
+  }
+}
+
+/* line 636, stdin */
 .horizontal {
   width: 100%;
   background-image: url("../images/horizontal_dark.png");
@@ -688,105 +826,264 @@ article {
   padding-bottom: 23.21429%;
   display: block;
   background-repeat: no-repeat;
-  padding-bottom: 23%;
+  padding-bottom: 15%;
+  min-height: 136px;
 }
 
-/* line 528, stdin */
+/* line 642, stdin */
 .horizontal h1 {
-  margin-left: 33%;
+  text-align: center;
   padding-top: 7%;
   margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
 }
 
-/* line 533, stdin */
+/* line 652, stdin */
 .horizontal .border {
-  margin-left: 47%;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 538, stdin */
+/* line 658, stdin */
 .horizontal .subText {
-  margin-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  line-height: 1rem;
+  width: 90%;
 }
 
-/* line 541, stdin */
+/* line 665, stdin */
 .horizontal .button {
-  margin-left: 43%;
-  margin-top: 3%;
-  padding: 1% 0% 1% 3.5%;
+  margin-top: 5%;
+  padding: 10px 5px 10px 40px;
+  cursor: pointer;
+  min-width: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 548, stdin */
+@media (max-width: 1410px) {
+  /* line 676, stdin */
+  .horizontal {
+    padding-bottom: 13%;
+  }
+  /* line 678, stdin */
+  .horizontal h1 {
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 1230px) {
+  /* line 685, stdin */
+  .horizontal {
+    padding-bottom: 11%;
+  }
+  /* line 687, stdin */
+  .horizontal h1 {
+    padding-top: 3%;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 694, stdin */
+  .horizontal {
+    padding-bottom: 9%;
+  }
+  /* line 696, stdin */
+  .horizontal .button {
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 940px) {
+  /* line 703, stdin */
+  .horizontal {
+    padding-bottom: 8%;
+  }
+  /* line 705, stdin */
+  .horizontal h1 {
+    padding-top: 2%;
+  }
+  /* line 708, stdin */
+  .horizontal .button {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 833px) {
+  /* line 715, stdin */
+  .horizontal {
+    padding-bottom: 7%;
+  }
+  /* line 717, stdin */
+  .horizontal h1 {
+    padding-top: 1%;
+  }
+  /* line 720, stdin */
+  .horizontal .button {
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 750px) {
+  /* line 727, stdin */
+  .horizontal {
+    padding-bottom: 4%;
+  }
+  /* line 729, stdin */
+  .horizontal h1 {
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+  /* line 733, stdin */
+  .horizontal .border {
+    margin-top: 0%;
+    margin-bottom: 1%;
+  }
+  /* line 737, stdin */
+  .horizontal .subText {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* line 746, stdin */
+  .horizontal h1 {
+    padding-bottom: 2%;
+  }
+  /* line 749, stdin */
+  .horizontal .subText {
+    margin-top: 3%;
+  }
+  /* line 752, stdin */
+  .horizontal .button {
+    margin-top: 6%;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+}
+
+@media (max-width: 550px) {
+  /* line 762, stdin */
+  .horizontal h1 {
+    padding-bottom: 1%;
+  }
+  /* line 765, stdin */
+  .horizontal .subText {
+    margin-top: 2%;
+  }
+  /* line 768, stdin */
+  .horizontal .button {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 776, stdin */
+  .horizontal h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0%;
+  }
+  /* line 780, stdin */
+  .horizontal .subText {
+    margin-top: 0%;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  /* line 785, stdin */
+  .horizontal .button {
+    margin-top: 5%;
+  }
+}
+
+/* line 791, stdin */
 .contact {
   padding: 5% 0;
 }
 
-/* line 550, stdin */
+/* line 793, stdin */
 .contact h2 {
-  margin-left: 20%;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.4rem;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-/* line 556, stdin */
+/* line 800, stdin */
 .contact .orange2 {
   background-color: #ff8b38;
-  margin: 2% 0 2% 47%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 560, stdin */
+/* line 807, stdin */
 .contact .subText {
-  margin-left: 34%;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8f9092;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-/* line 567, stdin */
+/* line 816, stdin */
 .contact .orange {
   background-color: #ff8b38;
   color: #ffffff;
   border: none;
   border-radius: 3px;
-  padding: 1% 1% 1% 2%;
-  margin-left: 43%;
+  padding: 10px 10px 10px 20px;
+  cursor: pointer;
+  min-width: 110px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* line 577, stdin */
+/* line 829, stdin */
 form {
   display: flex;
 }
 
-/* line 579, stdin */
+/* line 831, stdin */
 form .leftCol {
   width: 50%;
 }
 
-/* line 581, stdin */
+/* line 833, stdin */
 form .leftCol input {
   width: 90%;
   border: none;
-  border-bottom: 2px solid #f5f5f5;
-  margin-top: 5%;
+  border-bottom: 2px solid #d6d6d6;
+  margin-top: 6%;
   margin-bottom: 1%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   padding-left: 3%;
   font-family: "Open Sans", sans-serif;
+  color: #d6d6d6;
 }
 
-/* line 592, stdin */
+/* line 845, stdin */
 form .rightCol {
   width: 50%;
 }
 
-/* line 594, stdin */
+/* line 847, stdin */
 form .rightCol textarea {
   width: 90%;
   border: none;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid #d6d6d6;
   margin-top: 5%;
   margin-left: 3%;
   margin-bottom: 1%;
@@ -796,29 +1093,83 @@ form .rightCol textarea {
   resize: none;
 }
 
-/* line 609, stdin */
+@media (max-width: 1120px) {
+  /* line 865, stdin */
+  form .leftCol input {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 770px) {
+  /* line 873, stdin */
+  form {
+    flex-direction: column;
+  }
+  /* line 875, stdin */
+  form .leftCol {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 881, stdin */
+  form .rightCol {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 891, stdin */
+  form {
+    flex-direction: column;
+  }
+  /* line 894, stdin */
+  form .leftCol input {
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* line 900, stdin */
+  form .rightCol textarea {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/* line 908, stdin */
 footer {
   background-color: #000000;
 }
 
-/* line 611, stdin */
+/* line 910, stdin */
 footer .logos {
-  margin-left: 35%;
   padding-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-/* line 614, stdin */
+/* line 915, stdin */
 footer .logos li {
   font-size: 1.5rem;
   margin-left: 1%;
 }
 
-/* line 619, stdin */
+/* line 919, stdin */
+footer .logos li a:hover {
+  color: #8f9092;
+}
+
+/* line 925, stdin */
 footer .foot {
-  margin-left: 45%;
-  padding-bottom: 1%;
+  padding-bottom: 0.5%;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #8f9092;
   margin-top: 0.5%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
