@@ -140,6 +140,7 @@ nav{
 	@include rwd_image(1226px, 655px);
 }
 
+
 .headerBox{
 	display: flex;
 	padding-top: 20%;
@@ -149,6 +150,26 @@ nav{
 	color: $color-white;
 	font-weight: 400;
 	width: 80%;
+	}
+}
+
+.headerBoxLeft{
+	width: 60%;
+}
+
+@media (max-width: 730px){
+	.headerBoxLeft{
+		width: 100%;
+	}
+}
+
+.headerBoxRight{
+	width: 40%;
+}
+
+@media (max-width: 730px){
+	.headerBoxRight{
+		display: none;
 	}
 }
 
@@ -179,9 +200,6 @@ nav{
 		img{
 			display: none;
 		}
-		h1{
-			width: 100%;
-		}
 	}
 }
 
@@ -206,7 +224,6 @@ nav{
 
 @media(max-width: 420px){
 	.headerBox{
-		margin-left: 10%;;
 		h1{
 			margin-top: 0.5%;
 			font-size: 1.3rem;
@@ -316,6 +333,7 @@ nav{
 		border-radius: 5% 5% 0 0;
 		text-align: center;
 		span{
+
 			color: $color-orange2;
 			text-transform: uppercase;
 		}
@@ -353,7 +371,7 @@ nav{
 	}
 }
 
-@media(max-width: 670px){
+@media(max-width: 730px){
 	.login{
 		display: none;
 	}
@@ -373,6 +391,30 @@ nav{
 
 :-moz-placeholder{
 	color: #d6d6d6;
+}
+
+#errorName2{
+	font-size: 0.7rem;
+	color: red;
+	font-weight: bold; 
+	line-height: 1rem;
+	text-align: center;
+}
+
+#errorEmail2{
+	font-size: 0.7rem;
+	color: red;
+	font-weight: bold; 
+	line-height: 1rem;
+	text-align: center;
+}
+
+#errorPassword2{
+	font-size: 0.7rem;
+	color: red;
+	font-weight: bold; 
+	line-height: 1rem;
+	text-align: center;
 }
 
 .socialMedia{

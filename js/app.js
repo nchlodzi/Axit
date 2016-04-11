@@ -77,11 +77,11 @@ $(document).ready(function(){
 		top = navigation.position().top;
 		height = navigation.innerHeight();
 
-		if(windowPosition >= top){
+		if(windowPosition > top){
 			navigation.css('height', height);
 			navigation.addClass('sticky');
 		}
-		else if(windowPosition < top){
+		else if(windowPosition <= top){
 			navigation.removeClass('sticky');
 			navigation.css('height', 'auto');
 		}
@@ -154,5 +154,52 @@ $(document).ready(function(){
 	}
 
 	formularz();
+
+	function getStarted(){
+
+		var form = $('.login');
+		var name = $('#name2');
+		var email = $('#email2');
+		var password = $('#password2');
+		var errorName = $('#errorName2');
+		var errorEmail = $('#errorEmail2');
+		var errorPassword = $('#errorPassword2');
+		var button = $('.login').find('button');
+
+	button.on('click', function(event){
+
+		var newName = name.val();
+		var newEmail = email.val();
+		var newPassword = password.val();
+
+
+       		if(newName.length <= 2){
+               errorName.html("Name should be longer then 2 letters");
+                event.preventDefault();
+            }
+
+            if(newEmail.indexOf('@') === -1){
+                errorEmail.html("Wrong email adress");
+                event.preventDefault();
+            }
+
+            if(newEmail.indexOf('.') === -1){
+                errorEmail.html("Wrong email adress");
+                event.preventDefault();
+            }
+
+            if(newPassword.length < 7){
+            	errorPassword.html("Password should be longer then 7 signs");
+            	event.preventDefault();
+            }
+
+        event.preventDefault();
+	})
+
+	}
+
+	getStarted();
+
+
 
 });
